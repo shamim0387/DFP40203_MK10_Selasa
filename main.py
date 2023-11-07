@@ -10,8 +10,9 @@ def main():
     for filename in filelist:
         print(filename)
 
-        old_name = "text1.txt"
+        old_name = input("Enter the old name for the file: ")
         new_name = input("Enter the new name for the file: ")
+
 
         os.rename(old_name, new_name)
 
