@@ -11,7 +11,7 @@ def main():
         print(filename)
 
         old_name = "text1.txt"
-        new_name = "textrename.txt"
+        new_name = input("Enter the new name for the file: ")
 
         os.rename(old_name, new_name)
 
