@@ -1,25 +1,23 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+import os
 import glob
 
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+    print(f'Hi, {name}') 
 
 def main():
     filelist = glob.glob("../DFP40203_MK10_Selasa/*.txt")
     for filename in filelist:
         print(filename)
 
+        old_name = "text1.txt"
+        new_name = "textrename.txt"
 
-# Press the green button in the gutter to run the script.
+        os.rename(old_name, new_name)
+
+
+
 if __name__ == '__main__':
     print_hi('PyCharm')
     main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
